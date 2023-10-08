@@ -12,5 +12,6 @@ const Background = styled.div<Props>`
   display: ${props => props.centered ? `flex` : 'block'};
   justify-content: ${props => props.centered ? `center` : 'start'};
   align-items: ${props => props.centered ? `center` : 'start'};
+  overflow-x: clip;
 `
 export {Background}
