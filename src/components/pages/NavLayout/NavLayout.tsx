@@ -24,7 +24,7 @@ const options = [
 const NavLayout:React.FC<any> = () => {
     return (
         <>
-            <CustomNavBar options={options} logo={{text:'Avenir'}}/>
+            <CustomNavBar options={options} logo={{text:'Avenir'}} fixed/>
             <Outlet/>
         </>
     )
