@@ -40,7 +40,8 @@ const CustomNavBar:React.FC<Props> = ({
             width:'100%',
             padding:'30px 250px 30px 70px',
             boxSizing:'border-box',
-            position:`${fixed ? 'fixed' : 'static'}`
+            position:`${fixed ? 'fixed' : 'static'}`,
+            zIndex:1000
         }}>
             <Grid container justifyContent={'space-between'} alignItems={'center'}>
                 {logo && <Grid item>
@@ -64,7 +65,7 @@ const CustomNavBar:React.FC<Props> = ({
 export {CustomNavBar}
 
 const CustomNavLink = styled(NavLink)<{$isActive:boolean}>`
-    text-decoration: ${props => props.$isActive ? 'underline' : 'none'};
+    text-decoration: none;
     position: relative;
     
     ${props => props.$isActive ?`&::after {

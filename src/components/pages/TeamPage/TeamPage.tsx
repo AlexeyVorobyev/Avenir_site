@@ -1,5 +1,6 @@
 import React from "react";
 import {Box} from "@mui/material";
+import {SwiperRender} from "./SwiperRender";
 
 const TeamPage:React.FC = () => {
 
@@ -9,11 +10,11 @@ const TeamPage:React.FC = () => {
             height:'100%',
             display:'flex',
             justifyContent:'center',
-            alignItems:'end',
+            alignItems:'center',
             marginBottom:'auto',
             boxSizing:'border-box',
         }}>
-
+            <SwiperRender/>
         </Box>
     )
 }

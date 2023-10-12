@@ -97,8 +97,8 @@ const AchievementsPage:React.FC = () => {
                         left:'calc(50% - 6px)',
                         bottom:0
                     }}/>
-                    <Grid container columnSpacing={15} rowSpacing={20} sx={{
-                        paddingBottom:'160px'
+                    <Grid container columnSpacing={15} rowSpacing={15} sx={{
+                        paddingBottom:'100px'
                     }}>
                         <Grid item xs={5} sx={{
                             display:'flex',
