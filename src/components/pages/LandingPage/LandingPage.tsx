@@ -4,7 +4,7 @@ import {colorsAvenir} from "../../StyledComponents/colors";
 import styled from "styled-components";
 import achievementsPng from '../../../assets/png/achievements.png';
 import contactsPng from '../../../assets/png/contacts.png';
-import servicePng from '../../../assets/png/service.png';
+// import servicePng from '../../../assets/png/service.png';
 import teamPng from '../../../assets/png/team.png';
 import {useNavigate} from "react-router-dom";
 const LandingPage:React.FC<any> = () => {
@@ -28,7 +28,7 @@ const LandingPage:React.FC<any> = () => {
                 </Grid>
             </Grid>
             <Grid container height={'100%'}>
-                <Grid item xs={3} position={"relative"}>
+                <Grid item xs={4} position={"relative"}>
                     <BackgroundImage src={teamPng}/>
                     <ContainBox
                         borderRight
@@ -39,18 +39,18 @@ const LandingPage:React.FC<any> = () => {
                         <Typography variant={'h3'} color={'white'}>Наша команда</Typography>
                     </ContainBox>
                 </Grid>
-                <Grid item xs={3} position={"relative"}>
-                    <BackgroundImage src={servicePng}/>
-                    <ContainBox
-                        borderRight
-                        onClick={() => {
-                            navigate('../nav/service')
-                        }}
-                    >
-                        <Typography variant={'h3'} color={'white'}>Наши услуги</Typography>
-                    </ContainBox>
-                </Grid>
-                <Grid item xs={3} position={"relative"}>
+                {/*<Grid item xs={3} position={"relative"}>*/}
+                {/*    <BackgroundImage src={servicePng}/>*/}
+                {/*    <ContainBox*/}
+                {/*        borderRight*/}
+                {/*        onClick={() => {*/}
+                {/*            navigate('../nav/service')*/}
+                {/*        }}*/}
+                {/*    >*/}
+                {/*        <Typography variant={'h3'} color={'white'}>Наши услуги</Typography>*/}
+                {/*    </ContainBox>*/}
+                {/*</Grid>*/}
+                <Grid item xs={4} position={"relative"}>
                     <BackgroundImage src={achievementsPng}/>
                     <ContainBox
                         borderRight
@@ -61,7 +61,7 @@ const LandingPage:React.FC<any> = () => {
                         <Typography variant={'h3'} color={'white'}>Наши достижения</Typography>
                     </ContainBox>
                 </Grid>
-                <Grid item xs={3} position={"relative"}>
+                <Grid item xs={4} position={"relative"}>
                     <BackgroundImage src={contactsPng}/>
                     <ContainBox
                         onClick={() => {

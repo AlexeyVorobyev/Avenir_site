@@ -5,6 +5,7 @@ import {LandingPage} from "../pages/LandingPage/LandingPage";
 import {NavLayout} from "../pages/NavLayout/NavLayout";
 import {AchievementsPage} from "../pages/AchievementsPage/AchievementsPage";
 import {TeamPage} from "../pages/TeamPage/TeamPage";
+import {AboutPage} from "../pages/AboutPage/AboutPage";
 
 const Router:React.FC = () => {
     return (
@@ -15,8 +16,8 @@ const Router:React.FC = () => {
                 <Route path={'nav'} element={<NavLayout/>}>
                     <Route path={'contacts'} element={<TeamPage/>}/>
                     <Route path={'achievements'} element={<AchievementsPage/>}/>
-                    <Route path={'team'}/>
-                    <Route path={'service'}/>
+                    <Route path={'team'} element={<AboutPage/>}/>
+                    {/*<Route path={'service'}/>*/}
                 </Route>
             </Route>
             <Route path='*' element={<Navigate to='/' />} />

@@ -15,10 +15,10 @@ const options = [
         label:'Команда',
         path:'../nav/contacts'
     },
-    {
-        label:'Услуги',
-        path:'../nav/service'
-    }
+    // {
+    //     label:'Услуги',
+    //     path:'../nav/service'
+    // }
 ]
 
 const NavLayout:React.FC<any> = () => {
